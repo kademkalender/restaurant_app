@@ -25,7 +25,6 @@ router.register(r'restaurants', RestaurantsViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('restaurant.urls')),
     path('api/', include(router.urls)),
     path('restaurants/',restaurant_list, name='restaurant-list'),
     path('api/restaurants/create/', restaurant_create, name='restaurant-create'),
